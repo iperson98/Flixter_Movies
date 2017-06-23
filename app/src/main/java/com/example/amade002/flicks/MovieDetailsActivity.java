@@ -21,7 +21,7 @@ public class MovieDetailsActivity extends AppCompatActivity {
 
     @BindView(R.id.tvTitle) TextView tvTitle;
     @BindView(R.id.tvOverview) TextView tvOverview;
-    //@BindView(R.id.tvReleaseDate) TextView tvReleaseDate;
+    @BindView(R.id.rdView) TextView rdView;
     @BindView(R.id.rbVoteAverage) RatingBar rbVoteAverage;
 
 
@@ -45,8 +45,8 @@ public class MovieDetailsActivity extends AppCompatActivity {
         tvTitle.setText(movie.getTitle());
         tvOverview.setText(movie.getOverview());
 
-        //tvReleaseDate.setText(getResources().getString(R.string., intent.getStringExtra("release_date")));
-        //tvReleaseDate.setText(movie.getReleaseDate());
+        //tvReleaseDate.setText(getResources().getString(R.string.release_date, intent.getStringExtra("release_date")));
+        rdView.setText(movie.getReleaseDate());
 
 
         // vote average is 0..10, convert to 0..5 by dividing by 2

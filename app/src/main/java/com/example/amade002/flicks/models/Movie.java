@@ -17,7 +17,8 @@ public class Movie {
     public String posterPath; // only the path
     public String backdropPath;
     public Double voteAverage;
-    //public String releaseDate;
+    public String releaseDate;
+
 
 
     // intialize from the JSON data
@@ -27,7 +28,7 @@ public class Movie {
         posterPath = object.getString("poster_path");
         backdropPath = object.getString("backdrop_path");
         voteAverage = object.getDouble("vote_average");
-        //releaseDate = object.getString("release_date");
+        releaseDate = object.getString("release_date");
     }
 
     // no-arg, empty constructor required for the Parceler
@@ -55,8 +56,8 @@ public class Movie {
         return voteAverage;
     }
 
-    /*public String getReleaseDate() {
+    public String getReleaseDate() {
         return releaseDate;
     }
-    */
+
 }
