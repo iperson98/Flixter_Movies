@@ -7,16 +7,32 @@
     android:background="@drawable/coloring"
     tools:context="com.example.amade002.flicks.MovieDetailsActivity">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout">
+        <com.google.android.youtube.player.YouTubePlayerView
+            android:id="@+id/youtubeplayer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteY="0dp"
+            tools:layout_editor_absoluteX="8dp" />
+    </LinearLayout>
+
     <TextView
         android:id="@+id/tvTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
         android:textColor="#ffffff"
         android:text="Movie Title"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
         android:textAppearance="@android:style/TextAppearance.Large"
-        android:layout_below="@+id/imageView"
+        android:layout_below="@+id/linearLayout"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
+
 
     <RatingBar
         android:id="@+id/rbVoteAverage"

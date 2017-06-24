@@ -19,6 +19,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".MovieDetailsActivity" />
+        android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:name=".MovieTrailerActivity"></activity>
     </application>
 
 </manifest>
